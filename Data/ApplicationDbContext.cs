@@ -15,5 +15,6 @@ namespace ChallengerKenner1._0.Data
         }
         public DbSet<ProdutoModel> ProdutoModel { get; set; }
         public DbSet<LogAuditoriaModel> LogAuditoriaModel{ get; set; }
+        public DbSet<LogAuditoriaProdutosModel> LogAuditoriaProdutosModel { get; set; }
     }
 }

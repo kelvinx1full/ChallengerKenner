@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ChallengerKenner1._0.Data;
 using ChallengerKenner1._0.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ChallengerKenner1._0.Controllers
 {
+    [Authorize]
     public class LogAuditoriaController : Controller
     {
         private readonly ApplicationDbContext _context;

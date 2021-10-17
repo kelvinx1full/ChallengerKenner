@@ -169,5 +169,6 @@ C:\Users\Kelvin\Desktop\Challenger\ChallengerKenner1.0\ChallengerKenner1.0\obj\D
 C:\Users\Kelvin\Desktop\Challenger\ChallengerKenner1.0\ChallengerKenner1.0\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Details.cshtml.g.cs
 C:\Users\Kelvin\Desktop\Challenger\ChallengerKenner1.0\ChallengerKenner1.0\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Edit.cshtml.g.cs
 C:\Users\Kelvin\Desktop\Challenger\ChallengerKenner1.0\ChallengerKenner1.0\obj\Debug\netcoreapp3.1\Razor\Views\Produto\Index.cshtml.g.cs
-C:\Users\Kelvin\Desktop\Challenger\ChallengerKenner1.0\ChallengerKenner1.0\obj\Debug\netcoreapp3.1\ChallengerKenner1.0.csproj.AssemblyReference.cache
 C:\Users\Kelvin\Desktop\Challenger\ChallengerKenner1.0\ChallengerKenner1.0\obj\Debug\netcoreapp3.1\Razor\Views\LogAuditoria\Index.cshtml.g.cs
+C:\Users\Kelvin\Desktop\Challenger\ChallengerKenner1.0\ChallengerKenner1.0\obj\Debug\netcoreapp3.1\ChallengerKenner1.0.csproj.AssemblyReference.cache
+C:\Users\Kelvin\Desktop\Challenger\ChallengerKenner1.0\ChallengerKenner1.0\obj\Debug\netcoreapp3.1\Razor\Views\LogAuditoriaProdutos\Index.cshtml.g.cs

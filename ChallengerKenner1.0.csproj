@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20211017041124_SecondMigration.cs" />
+    <Compile Remove="Migrations\20211017041124_SecondMigration.Designer.cs" />
+    <Compile Remove="Migrations\20211017044654_SecondMigration.cs" />
+    <Compile Remove="Migrations\20211017044654_SecondMigration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Elmah.MVC" Version="2.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.19" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.19" />

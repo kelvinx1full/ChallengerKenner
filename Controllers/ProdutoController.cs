@@ -82,6 +82,15 @@ namespace ChallengerKenner1._0.Controllers
                 });
                 _context.SaveChanges();
 
+                _context.LogAuditoriaProdutosModel.Add(
+                new LogAuditoriaProdutosModel
+                {
+                    EmailUsuario = User.Identity.Name,
+                    DetalhesAuditoriaProdutos = string.Concat("Entrada do produto: ",
+                    produtoModel.Nome, " Data de entrada : ", DateTime.Now.ToLongDateString())
+                });
+                _context.SaveChanges();
+
                 return RedirectToAction(nameof(Index));
             }
             return View(produtoModel);
@@ -182,6 +191,15 @@ namespace ChallengerKenner1._0.Controllers
                     DetalhesAuditoria = string.Concat("Deletou o Produto: ",
                     produtoModel.Nome, " Data de exclusão : ", DateTime.Now.ToLongDateString())
                 });
+            _context.SaveChanges();
+
+            _context.LogAuditoriaProdutosModel.Add(
+               new LogAuditoriaProdutosModel
+               {
+                   EmailUsuario = User.Identity.Name,
+                   DetalhesAuditoriaProdutos = string.Concat("Saída do produto: ",
+                   produtoModel.Nome, " Data de saída : ", DateTime.Now.ToLongDateString())
+               });
             _context.SaveChanges();
 
 

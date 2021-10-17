@@ -12,11 +12,11 @@ namespace ChallengerKenner1._0.Models
     {
         [Key]
         [Column("ProdutoId")]
-        [Display(Name ="Codigo")]
+        [Display(Name = "Codigo")]
         public Guid ProdutoId { get; set; }
 
         [Column("Nome")]
-        [Display(Name ="Nome")]
+        [Display(Name = "Nome")]
         [MaxLength(50)]
         [Required(ErrorMessage = "Informe o nome do produto")]
         public string Nome { get; set; }
@@ -34,5 +34,6 @@ namespace ChallengerKenner1._0.Models
 
         [Required(ErrorMessage = "Informe a quantidade")]
         public double Quantidade { get; set; }
+
     }
 }
