@@ -30,6 +30,15 @@ namespace ChallengerKenner1._0.Controllers
         // GET: Produto/Details/5
         public async Task<IActionResult> Details(Guid? id)
         {
+            _context.LogAuditoriaModel.Add(
+                new LogAuditoriaModel
+                {
+                    EmailUsuario = User.Identity.Name,
+                    DetalhesAuditoria = "Entrou na tela de Detalhes"
+                });
+
+            _context.SaveChanges();
+
             if (id == null)
             {
                 return NotFound();
@@ -78,7 +87,7 @@ namespace ChallengerKenner1._0.Controllers
                 {
                     EmailUsuario = User.Identity.Name,
                     DetalhesAuditoria = string.Concat("Cadastrou o Produto: ", 
-                    produtoModel.Nome, " Data de cadastro : ", DateTime.Now.ToLongDateString())
+                    produtoModel.Nome," | ", " Data de cadastro: ", DateTime.Now.ToLongDateString())
                 });
                 _context.SaveChanges();
 
@@ -87,7 +96,7 @@ namespace ChallengerKenner1._0.Controllers
                 {
                     EmailUsuario = User.Identity.Name,
                     DetalhesAuditoriaProdutos = string.Concat("Entrada do produto: ",
-                    produtoModel.Nome, " Data de entrada : ", DateTime.Now.ToLongDateString())
+                    produtoModel.Nome," | ", " Data de entrada: ", DateTime.Now.ToLongDateString())
                 });
                 _context.SaveChanges();
 
@@ -99,6 +108,15 @@ namespace ChallengerKenner1._0.Controllers
         // GET: Produto/Edit/5
         public async Task<IActionResult> Edit(Guid? id)
         {
+            _context.LogAuditoriaModel.Add(
+                new LogAuditoriaModel
+                {
+                    EmailUsuario = User.Identity.Name,
+                    DetalhesAuditoria = "Entrou na tela de Edição"
+                });
+
+            _context.SaveChanges();
+
             if (id == null)
             {
                 return NotFound();
@@ -136,7 +154,7 @@ namespace ChallengerKenner1._0.Controllers
                 {
                     EmailUsuario = User.Identity.Name,
                     DetalhesAuditoria = string.Concat("Atualizou o Produto: ",
-                    produtoModel.Nome, " Data de atualização : ", DateTime.Now.ToLongDateString())
+                    produtoModel.Nome," | ", "Data de atualização: ", DateTime.Now.ToLongDateString())
                 });
                     _context.SaveChanges();
 
@@ -160,6 +178,15 @@ namespace ChallengerKenner1._0.Controllers
         // GET: Produto/Delete/5
         public async Task<IActionResult> Delete(Guid? id)
         {
+            _context.LogAuditoriaModel.Add(
+                new LogAuditoriaModel
+                {
+                    EmailUsuario = User.Identity.Name,
+                    DetalhesAuditoria = "Entrou na tela de Exclusão"
+                });
+
+            _context.SaveChanges();
+
             if (id == null)
             {
                 return NotFound();
@@ -189,7 +216,7 @@ namespace ChallengerKenner1._0.Controllers
                 {
                     EmailUsuario = User.Identity.Name,
                     DetalhesAuditoria = string.Concat("Deletou o Produto: ",
-                    produtoModel.Nome, " Data de exclusão : ", DateTime.Now.ToLongDateString())
+                    produtoModel.Nome, " | ", "Data de exclusão: ", DateTime.Now.ToLongDateString())
                 });
             _context.SaveChanges();
 
@@ -198,7 +225,7 @@ namespace ChallengerKenner1._0.Controllers
                {
                    EmailUsuario = User.Identity.Name,
                    DetalhesAuditoriaProdutos = string.Concat("Saída do produto: ",
-                   produtoModel.Nome, " Data de saída : ", DateTime.Now.ToLongDateString())
+                   produtoModel.Nome, " | ", "Data de saída: ", DateTime.Now.ToLongDateString())
                });
             _context.SaveChanges();
 

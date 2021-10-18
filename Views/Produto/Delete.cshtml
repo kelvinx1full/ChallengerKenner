@@ -4,11 +4,9 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
-
-<h3>Are you sure you want to delete this?</h3>
+<h1>Exclusão de produto</h1>
+<span class="badge badge-danger">Esse produto será deletado do banco de dados. Você tem certeza disso?</span>
 <div>
-    <h4>ProdutoModel</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -45,7 +43,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="ProdutoId" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Deletar" class="btn btn-danger" /> 
+        <a asp-action="Index" class="btn btn-secondary">Retornar</a>
     </form>
 </div>
