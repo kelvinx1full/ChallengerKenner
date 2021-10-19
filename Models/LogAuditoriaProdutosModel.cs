@@ -16,7 +16,7 @@ namespace ChallengerKenner1._0.Models
         public Guid LogProdutosId { get; set; }
 
         [Column("DetalhesAuditoriaProdutos")]
-        [Display(Name = "Detalhes Auditoria Produtos")]
+        [Display(Name = "Detalhes Relatório Produtos")]
         public string DetalhesAuditoriaProdutos { get; set; }
 
         [Column("EmailUsuarioProdutos")]

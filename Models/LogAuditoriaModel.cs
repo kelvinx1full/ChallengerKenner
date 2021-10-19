@@ -15,11 +15,11 @@ namespace ChallengerKenner1._0.Models
         public int Id { get; set; }
 
         [Column("DetalhesAuditoria")]
-        [Display(Name = "Detalhes Auditoria")]
+        [Display(Name = "Detalhes Relatório Geral")]
         public string DetalhesAuditoria { get; set; }
 
         [Column("EmailUsuario")]
-        [Display(Name = "Email Auditoria")]
+        [Display(Name = "Email")]
         public string EmailUsuario { get; set; }
     }
 }
